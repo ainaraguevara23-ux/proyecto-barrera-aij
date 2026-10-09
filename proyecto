@@ -1,0 +1,35 @@
+# Proyecto Integrador: Barrera Automática de Estacionamiento
+
+**Integrantes:**
+- Ainara Guevara (Scrum Master)
+- Jazmín Banes
+- Ignacio Demo
+
+---
+
+## Requerimientos Funcionales
+1. El sistema debe medir en tiempo real la distancia de un vehículo mediante el sensor ultrasónico HC-SR04.
+2. El sistema debe levantar la barrera (girar el servomotor a 90°) cuando detecte un objeto a menos de 15 cm.
+3. El sistema debe encender un LED verde mientras la barrera permanezca abierta.
+4. El sistema debe bajar la barrera (girar el servomotor a 0°) y encender un LED rojo cuando el vehículo se retire (distancia mayor a 15 cm).
+5. El sistema debe mantener abierta la barrera al menos durante 3 segundos antes de permitir que se cierre nuevamente.
+
+## Requerimientos No Funcionales
+1. El tiempo de respuesta de detección del sensor hasta el inicio de movimiento de la barrera debe ser inferior a 500 ms.
+2. El sistema debe simularse correctamente en Wokwi sin errores de librerías ni de compilación.
+3. El código debe incluir comentarios descriptivos en cada bloque de lógica y asignación de variables.
+4. El servomotor debe realizar movimientos suaves para no simular un esfuerzo mecánico repentino.
+5. Los cables y conexiones en Wokwi deben estar organizados por colores estándar (Rojo: VCC, Negro: GND, Azul/Amarillo: Señal).
+
+---
+
+## Historias de Usuario
+1. **Como** conductor, **quiero** que la barrera detecte mi auto al acercarme, **para** que se abra automáticamente sin tener que bajarme.
+2. **Como** conductor, **quiero** ver un indicador LED verde cuando la barrera esté arriba, **para** saber que tengo el paso habilitado.
+3. **Como** operador del estacionamiento, **quiero** que la barrera baje sola tras el paso del vehículo, **para** garantizar la seguridad del recinto.
+4. **Como** peatón, **quiero** ver un LED rojo cuando la barrera esté baja, **para** saber que los autos no están en tránsito.
+5. **Como** evaluador del proyecto, **quiero** revisar la arquitectura del código en GitHub, **para** verificar el uso de condicionales, variables y librerías de hardware.
+
+---
+
+## Diagrama de Flujo
