@@ -34,7 +34,7 @@ Sistema de control de acceso vehicular automatizado mediante sensor ultrasónico
 ```mermaid
 graph TD
     A[Inicio: setup] --> B[Inicializar Servo a 0°]
-    B --> C[LED Rojo ON / LED Verde OFF]
+    B --> C[LED Rojo ENCENDIDO / LED Verde APAGADO]
     C --> D[Emitir pulso ultrasónico Trig]
     D --> E[Medir tiempo de respuesta Echo]
     E --> F[Calcular distancia en cm]
@@ -45,4 +45,3 @@ graph TD
     J --> D
     G -- No --> K[Girar Servo a 0° - Cerrar Barrera]
     K --> C
-[Ver Proyecto y Simulación en Wokwi](pega_aqui_tu_enlace_de_wokwi)https://wokwi.com/projects/477420500837175297
