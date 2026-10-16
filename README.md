@@ -45,3 +45,4 @@ graph TD
     J --> D
     G -- No --> K[Girar Servo a 0° - Cerrar Barrera]
     K --> C
+[Ver Proyecto y Simulación en Wokwi](pega_aqui_tu_enlace_de_wokwi)https://wokwi.com/projects/477420500837175297
